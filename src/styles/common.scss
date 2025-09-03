@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+.m-t-10{
+  margin-top: 10px;
+}
+.m-t-18{
+  margin-top: 18px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.m-b-6{
+  margin-bottom: 6px;
+}
+.m-b-10{
+  margin-bottom: 10px;
+}
+.m-b-18 {
+  margin-bottom: 18px;
+}
+.m-b-20 {
+  margin-bottom: 20px;
+}
+.m-l-8{
+  margin-left: 8px !important;
+}
+.m-l-10{
+  margin-left: 10px !important;
+}
+.m-r-10{
+  margin-right: 10px;
+}
+.m-r-20{
+  margin-right: 20px;
+}
+.p-20{
+  padding-left: 20px;
+  padding-right:20px;
+}
+.font-bold{
+  font-weight: bold;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.font-12{
+  font-size: 12px;
+}
+
+.flex-box{
+  display: flex;
+  align-items: center;
+}
+
+.one-line{
+  overflow: hidden;
+  white-space:no-wrap;
+  text-overflow: ellipsis;
+}
+
+.cell-disabled{
+  background: #ececec;
+}
+.bg-add{
+  background: #d3d3d3;
+}
+.edit-color{
+  color: #f56c6c;
+}
+.sort-color{
+  color: #9acd32;
+}
+.expand-color{
+  font-weight: bold;
+  font-size: 14px;
+}
+// 没有数据
+.no-content{
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+.text-right{
+  text-align: right;
+}
+
+// 必填*样式
+.require-text{
+  color: #F56C6C;
+  vertical-align: middle;
+}
+// 公共容器
+.common-contain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .table-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 20px 0;
+    width: 100%;
+    // min-height: 600px;
+    flex: 1;
+  }
+}
+
+.common-tip{
+  color: #ccc;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+// 公共搜索条件-折叠样式
+.common-search-contain {
+  .el-menu {
+    border-radius: 10px;
+    padding: 10px 10px 0 !important;
+    box-sizing: border-box;
+    border-right: none !important;
+    height: 100%;
+    overflow-y: auto;
+    width: 280px;
+    opacity: 1;
+    transition: width 500ms;
+  }
+  .el-menu--collapse {
+    width: 0px;
+    padding: 0 !important;
+}
+}
+
+// 两列布局公共样式
+.device-parameter-contain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  .common-search-contain {
+    height: 100%;
+    position: relative;
+    margin-right: 10px;
+    .search-title{
+      background-color: #fafafc;
+      border-radius: 2px 2px 0px 0px;
+      margin: -10px -10px 18px;
+      padding: 13px 10px;
+      display: block;
+    }
+    .arror {
+      left: 100%;
+      top: 50%;
+      margin-top: -30px;
+      position: absolute;
+      cursor: pointer;
+      height: 50px;
+      background: #324157;
+      width: 10px;
+      border-radius: 10px 0 0 10px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      > i {
+        margin-left: -3px;
+      }
+    }
+  }
+  .device-parameter {
+    flex: 1;
+    padding:10px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    // overflow-y: auto;
+    font-size: 12px !important;
+    .add-params-box {
+      padding: 20px 0;
+      /deep/ .el-input__inner {
+        height: 30px;
+        line-height: 30px;
+      }
+      /deep/ .el-input-number {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//下拉框-options中的样式
+.option-contain{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  .option-item{
+    max-width: 260px;
+  }
+  .option-des{
+    color: #ccc;
+  }
+}
+
+//全局滚动条样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background: #ececec;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #c1c1c1;
+}
+
+// .diolag 公共样式
+.diolag-box{
+  background-color: #00678e;
+  padding: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.body, .font-size-12{
+  font-size: 12px;
+}
+
+.icon { 
+  width: 1em; height: 1em; 
+  vertical-align: -0.15em; 
+  fill: currentColor; 
+  overflow: hidden; 
+}
+
+.table-ope{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  .el-button{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

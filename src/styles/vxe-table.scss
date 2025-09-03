@@ -1,0 +1,18 @@
+@import 'vxe-table/styles/variable.scss';
+
+// 修改修改主题样式变量
+$vxe-font-size: 12px;
+$vxe-primary-color: #00678e;
+$vxe-table-font-color: $vxe-font-color;
+$vxe-table-row-height-default:36px;
+$vxe-checkbox-font-size-default:14px;
+$vxe-button-height-default: 24px;
+$vxe-button-height-small: 26px;
+$vxe-form-item-min-height-default: 36px;
+
+@import 'vxe-table/styles/modules.scss';
+
+.vxe-toolbar{
+  padding : 0 0 10px;
+}
+

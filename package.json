@@ -1,0 +1,68 @@
+{
+  "name": "r2r-web-ui",
+  "version": "0.0.1",
+  "description": "R2r Web UI",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "init": "yarn install",
+    "publish": "vue-cli-service build",
+    "preview": "node build/index.js --preview",
+    "update:package": "yarn upgrade-interactive --latest -a",
+    "update:lock": "yarn upgrade package@version",
+    "update": "yarn upgrade"
+  },
+  "dependencies": {
+    "@microsoft/signalr": "^3.1.8",
+    "axios": "0.19.2",
+    "echarts": "^5.3.3",
+    "element-ui": "2.13.2",
+    "exceljs": "^4.2.0",
+    "file-saver": "^2.0.5",
+    "font-awesome": "^4.7.0",
+    "fparser": "^2.0.2",
+    "moment": "^2.29.4",
+    "normalize.css": "8.0.1",
+    "nprogress": "0.2.0",
+    "package": "^1.0.1",
+    "path-to-regexp": "6.1.0",
+    "pubsub-js": "^1.8.0",
+    "sortablejs": "^1.15.0",
+    "vue": "^2.6.11",
+    "vue-axios": "^2.1.5",
+    "vue-i18n": "^8.20.0",
+    "vue-router": "3.1.6",
+    "vxe-table": "^3.6.9",
+    "vxe-table-plugin-export-xlsx": "^2.2.2",
+    "vxe-utils": "^2.0.0",
+    "xe-utils": "^3.5.7",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.1",
+    "@babel/register": "7.10.5",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+    "@vue/babel-preset-jsx": "^1.1.2",
+    "@vue/cli-plugin-babel": "4.5.2",
+    "@vue/cli-service": "^4.5.2",
+    "autoprefixer": "^9.8.6",
+    "babel-core": "7.0.0-bridge.0",
+    "chalk": "4.1.0",
+    "connect": "3.7.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "runjs": "^4.3.2",
+    "sass-loader": "^9.0.3",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "script-loader": "^0.7.2",
+    "serve-static": "^1.13.2",
+    "vue-template-compiler": "2.6.11"
+  },
+  "engines": {
+    "node": ">=8.9",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

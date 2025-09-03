@@ -1,0 +1,132 @@
+// cover some element-ui styles
+/* 改变 icon 字体路径变量，必需 */
+/* 改变主题色变量 */
+$--color-primary: #00678e;
+// $--font-size-base:12px;
+// $--size-base:12px;
+// $--select-input-font-size:12px;
+// $--dialog-content-font-size:12px;
+// $--avatar-text-font-size:12px;
+// $--switch-button-size:12px;
+// $--font-size-small:12px;
+// $--input-small-font-size:12px;
+// $--font-size-large:16px;
+// $--input-height:30px;
+// $--input-small-height:30px;
+
+//修改element-ui的主题色
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+
+// el-tab el-input样式
+.el-textarea{
+  .el-textarea__inner{
+    padding: 0 8px !important;
+  }
+}
+.el-input{
+  .el-input__inner{
+    padding: 0 8px !important;
+  }
+  .el-input__icon{
+    line-height: 30px !important;
+    width: 18px !important;
+  }
+  &.el-input--prefix {
+    .el-input__inner{
+      padding-left: 24px !important;
+    }
+  }
+}
+.el-input-number{
+  line-height: 30px !important;
+  width: 100% !important;
+  .el-input__inner{
+    text-align: left !important;
+    padding-left: 8px !important;
+    padding-right: 40px !important;
+  }
+  span{
+    width: 24px !important;
+    line-height: 14px !important;
+    &:first-child{
+      line-height: 15px !important;
+    }
+  }
+}
+.el-tabs__item, .el-input__inner{
+  font-size: 12px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
+// 弹框右上角提示
+.el-notification__content{
+  word-break: break-all;
+  word-wrap: break-word;
+  margin-top: 0 !important;
+}
+
+//模态框样式
+.el-dialog{
+  .el-dialog__header{
+    padding: 0 !important;
+    margin-bottom: 10px;
+    .el-dialog__title, .el-dialog__close{
+      color: #fff !important;
+      font-size: 15px;
+      &:hover{
+        color: #fff !important;
+      }
+    }
+    .el-dialog__headerbtn{
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .el-dialog__body{
+    padding: 0 10px;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .el-dialog__footer{
+    padding: 10px;
+  }
+}
+.form-dialog{
+  .el-dialog__footer{
+    padding-top:0 !important;
+  }
+}
+.el-button--default{
+  color: #606266 !important;
+}
+.el-button--primary{
+  color: #fff !important;
+}
+.el-button{
+  padding: 7px 14px !important;
+  &.is-round{
+    padding: 6px  !important;
+  }
+  i{
+    min-width: 12px;
+  }
+}
+.el-button [class*="fa"] + span{
+  margin-left: 5px;
+  vertical-align: bottom;
+}
+
+// font-size 12px
+.el-form-item__label, .el-button, .el-tabs__item, .el-input, .el-submenu__title, .el-menu-item, .el-radio__label, .el-checkbox__label, .el-dropdown-menu__item, .el-select-dropdown__item, .el-dialog__body, .el-textarea, .el-message-box__message, .el-popover, .el-date-range-picker, .el-date-range-picker__header >div, .el-form-item__content{
+  font-size: 12px !important;
+}
+.el-message-box__title{
+  font-size: 14px !important;
+}
+.el-popover{
+  padding: 10px !important;
+  max-width: 300px;
+}
